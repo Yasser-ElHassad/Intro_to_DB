@@ -14,6 +14,6 @@ try:
     mydb.close()
 
 
-except:
+except mysql.connector.Error:
     print(f'Database creation failed!')
 
