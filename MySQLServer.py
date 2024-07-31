@@ -7,7 +7,7 @@ try:
         
     )
     cursor = mydb.cursor()
-    cursor.execute("create database alx_book_store")
+    cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
     mydb.commit()
 
     print(f"Database 'alx_book_store' created successfully!")
